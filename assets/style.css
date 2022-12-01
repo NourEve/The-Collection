@@ -1,1 +1,7 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  background-color: #DEB6AB;
+}
+
+.main__div__lol {
+  border: 3px solid black;
+}/*# sourceMappingURL=style.css.map */
