@@ -1,7 +1,88 @@
 body {
   background-color: #DEB6AB;
+  width: 100vw;
+  height: 100vh;
 }
 
-.main__div__lol {
-  border: 3px solid black;
+.main {
+  margin-left: -2vw;
+  margin-right: -2vw;
+}
+.main__divlol--bg {
+  background: url(images/Soraka_27.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__divAll {
+  display: grid;
+  grid-template-columns: 1fr 0.3fr repeat(4, 1fr) 0.3fr 1fr;
+  grid-template-rows: 1fr repeat(2, 0.5fr) 1fr 0.5fr repeat(3, 1fr) repeat(3, 0.5fr) 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
+}
+.main__divAll__imgLol {
+  grid-area: 2/3/5/4;
+  position: relative;
+  z-index: 1;
+  box-shadow: 7px 10px 10px #85586F;
+}
+.main__divAll__card {
+  height: 70vh;
+  border-radius: 10vw;
+  background-color: rgba(248, 236, 209, 0.7);
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-bottom: 5vw;
+  grid-area: 3/2/11/8;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 0.5fr 1fr;
+  grid-template-rows: 0.5fr repeat(2, 0.25fr) 1fr 0.25fr 3fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.main__divAll__h3 {
+  grid-area: 1/3/2/7;
+  margin-left: 3vw;
+  color: #482f3c;
+}
+.main__divAll__h4__date {
+  grid-area: 2/6/3/7;
+  background-color: #DEB6AB;
+  border-radius: 2vw;
+  color: #AC7D88;
+  margin-top: -4vw;
+  margin-bottom: 10vw;
+  padding: 2vw;
+}
+.main__divAll__h4__dev {
+  grid-area: 2/3/3/5;
+  margin-left: 3vw;
+  margin-top: 0;
+  margin-bottom: 0vw;
+  color: #482f3c;
+}
+.main__divAll__h4__publi {
+  grid-area: 3/3/4/5;
+  margin-left: 3vw;
+  margin-top: -6vw;
+  color: #482f3c;
+}
+.main__divAll__span {
+  grid-area: 4/1/5/7;
+  text-align: left;
+  background-color: #AC7D88;
+  border-radius: 5vw 5vw 0vw 0vw;
+  padding: 4vw 2vw 5vw 2vw;
+  margin-bottom: 0;
+  color: #F8ECD1;
+}
+.main__divAll__p {
+  grid-area: 6/1/7/7;
+  text-align: center;
+  background-color: #AC7D88;
+  border-radius: 0vw 0vw 5vw 5vw;
+  padding: 4vw 2vw 5vw 2vw;
+  margin-top: -5vw;
+  color: #482f3c;
 }/*# sourceMappingURL=style.css.map */

@@ -1,20 +1,12 @@
-function addDiv (newDiv, classDiv, newImg, classImg, n, attributImg, newObject){
-    newDiv = addElement('div', "", classDiv);
-    tagMain.appendChild(newDiv);
+function addDiv (classDiv1, classImg, n, attributImg, newObject){
+    newDiv1 = addElement('div', "", classDiv1);
+    tagMain.appendChild(newDiv1);
+    //document.getElementById(newDiv1).classList.add("main__divAll");
+    newDiv2 = addElement('div', "", "main__divAll__card");
+    newDiv1.appendChild(newDiv2);
     newImg = addElement('img', "", classImg);
-    newDiv.appendChild(newImg);
+    newDiv2.appendChild(newImg);
     newImg.src = tImages[n];
     newImg.setAttribute("alt", attributImg);
-    addObject (newObject, newDiv);
+    addObject (newObject, newDiv2);
 }
-
-let divLOL = addElement('div',"", "main__divLOL");
-tagMain.appendChild(divLOL);
-
-let imgLOL = addElement('img', "", "main__divLOL__img");
-divLOL.appendChild(imgLOL);
-imgLOL.src = tImages[1];
-imgLOL.setAttribute("alt", "logo League of Legends");
-addObject(gameLol, divLOL);
-
-addDiv ("main__div__lol","main__div__log__img", 1, "Logo-League of Legends", gameLol);
