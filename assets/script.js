@@ -82,7 +82,7 @@ const gameAssassin = {
 
 
 //array with all images of the site
-let tImages = [ 'assets/images/LogoSample_ByTailorBrands.png', 'assets/images/Client_Blog_Header_v2.jpeg'];
+let tImages = [ 'assets/images/LogoSample_ByTailorBrands.png', 'assets/images/Lol-logo.jpeg', 'assets/images/subnautica-logo.png', 'assets/images/TotalWar-logo.jpeg', 'assets/images/DragonAge-logo.png', 'assets/images/TheWitcher-logo.png', 'assets/images/Genshin-logo.jpeg', 'assets/images/Skyrim-logo.png', 'assets/images/AgeOf-logo.jpeg', 'assets/images/Sims-logo.jpeg', 'assets/images/Assassin-logo.jpeg'];
 
 //function creating text elements
 function addElement (balise, content, Newclass){
@@ -155,6 +155,32 @@ tagHeader.appendChild(sloganHeader);
 
 //Creation of main : one 'div' for each game
 //Creation of divLOL
-addDiv ("main__divlol--bg", "main__divAll__imgLol", 1, "Logo-League of Legends", gameLol);
+addDiv ("main__divlol--bg", "main__divAll__img", 1, "Logo-League of Legends", gameLol);
 document.querySelector(".main__divlol--bg").classList.add("main__divAll");
-
+//Creation of divSubnautica
+addDiv ("main__divSubnautica--bg", "main__divAll__img", 2, "Picture of Subnautica", gameSubnautica);
+document.querySelector(".main__divSubnautica--bg").classList.add("main__divAll");
+//Creation of divTotalWar
+addDiv ("main__divTotalWar--bg", "main__divAll__img", 3, "Logo of TotalWar", gameTotalwar);
+document.querySelector(".main__divTotalWar--bg").classList.add("main__divAll");
+//Creation of divDragonAge
+addDiv ("main__divDragonAge--bg", "main__divAll__img", 4, "Logo of Dragon Age", gameDragonage);
+document.querySelector(".main__divDragonAge--bg").classList.add("main__divAll");
+//Creation of divTheWitcher
+addDiv ("main__divTheWitcher--bg", "main__divAll__img", 5, "Logo of The Witcher 3", gameThewitcher);
+document.querySelector(".main__divTheWitcher--bg").classList.add("main__divAll");
+//Creation of divGenshin
+addDiv ("main__divGenshin--bg", "main__divAll__img", 6, "Logo of Genshin Impact", gameGenshin);
+document.querySelector(".main__divGenshin--bg").classList.add("main__divAll");
+//Creation of divSkyrim
+addDiv ("main__divSkyrim--bg", "main__divAll__img", 7, "Logo of Skyrim", gameSkyrim);
+document.querySelector(".main__divSkyrim--bg").classList.add("main__divAll");
+//Creation of divAgeOf
+addDiv ("main__divAgeOf--bg", "main__divAll__img", 8, "Logo of Age of empires", gameAgeof);
+document.querySelector(".main__divAgeOf--bg").classList.add("main__divAll");
+//Creation of divTheSims
+addDiv ("main__divTheSims--bg", "main__divAll__img", 9, "Logo of The Sims", gameThesims);
+document.querySelector(".main__divTheSims--bg").classList.add("main__divAll");
+//Creation of divAssassin
+addDiv ("main__divAssassin--bg", "main__divAll__img", 10, "Logo of Assassin's Creed Valhalla", gameAssassin);
+document.querySelector(".main__divAssassin--bg").classList.add("main__divAll");

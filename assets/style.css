@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;700&family=Permanent+Marker&display=swap");
 body {
   background-color: #DEB6AB;
   width: 100vw;
@@ -7,9 +8,55 @@ body {
 .main {
   margin-left: -2vw;
   margin-right: -2vw;
+  font-family: "Dosis", sans-serif;
 }
 .main__divlol--bg {
-  background: url(images/Soraka_27.jpeg);
+  background: url(images/Lol-wallpaper.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__divSubnautica--bg {
+  background: url(images/Subnautica-wallpaper.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__divTotalWar--bg {
+  background: url(images/TotalWar-wallpaper.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__divDragonAge--bg {
+  background: url(images/DragonAge-wallpaper.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__divTheWitcher--bg {
+  background: url(images/TheWitcher-wallpaper.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__divGenshin--bg {
+  background: url(images/Genshin-wallpaper.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__divSkyrim--bg {
+  background: url(images/Skyrim-wallpaper.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__divAgeOf--bg {
+  background: url(images/AgeOf-wallpaper.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__divTheSims--bg {
+  background: url(images/Sims-wallpaper.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__divAssassin--bg {
+  background: url(images/Assassin-wallpaper.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -21,7 +68,7 @@ body {
   grid-row-gap: 0px;
   height: 100vh;
 }
-.main__divAll__imgLol {
+.main__divAll__img {
   grid-area: 2/3/5/4;
   position: relative;
   z-index: 1;
@@ -45,6 +92,7 @@ body {
   grid-area: 1/3/2/7;
   margin-left: 3vw;
   color: #482f3c;
+  font-family: "Permanent Marker", cursive;
 }
 .main__divAll__h4__date {
   grid-area: 2/6/3/7;
