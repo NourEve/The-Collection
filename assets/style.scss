@@ -22,10 +22,35 @@ body {
     height: 100vh;
 }
 
+.header {
+    color: $white;
+    margin-left: 5vw;
+    margin-top: -5vw;
+    &__h1 {
+        font-family: 'Permanent Marker', cursive;
+        font-size: 10vw;
+        text-shadow: 1vw 1vw 1vw $purple;
+
+    }
+    &__img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        box-shadow: 7px 10px 10px $purple;
+        border-radius: 50%;
+    }
+    &__slogan {
+        font-family: 'Dosis', sans-serif;
+        font-weight: 700;
+        font-size: 5vw;
+    }
+}
+
 .main{
     margin-left: -2vw;
     margin-right: -2vw;
     font-family: 'Dosis', sans-serif;
+    font-weight: 200;
     &__divlol--bg {
         background: url(images/Lol-wallpaper.jpeg);
         @include wallpaper;
@@ -80,7 +105,7 @@ body {
             box-shadow: 7px 10px 10px $purple;
         }
         &__card {
-            height: 70vh;
+            height: 80vh;
             border-radius: 10vw;
             background-color: rgba(248, 236, 209, .7);
             padding-left: 5vw;
@@ -98,6 +123,7 @@ body {
             margin-left: 3vw;
             @include purple-darken;
             font-family: 'Permanent Marker', cursive;
+            font-size: 5vw;
         }
         &__h4__date {
             grid-area: 2 / 6 / 3 / 7;
@@ -107,19 +133,22 @@ body {
             margin-top: -4vw;
             margin-bottom: 10vw;
             padding: 2vw;
+            font-size: 4vw;
         }
         &__h4__dev {
-            grid-area: 2 / 3 / 3 / 5;
+            grid-area: 2 / 3 / 3 / 6;
             margin-left: 3vw;
             margin-top: 0;
             margin-bottom: 0vw;
             @include purple-darken;
+            font-size: 3vw;
         }
         &__h4__publi {
-            grid-area: 3 / 3 / 4 / 5;
+            grid-area: 3 / 3 / 4 / 6;
             margin-left: 3vw;
-            margin-top: -6vw;
+            margin-top: -10vw;
             @include purple-darken;
+            font-size: 3vw;
         }
         &__span {
             grid-area: 4 / 1 / 5 / 7;
@@ -127,8 +156,10 @@ body {
             background-color: $rose;
             border-radius: 5vw 5vw 0vw 0vw;
             padding: 4vw 2vw 5vw 2vw;
+            margin-top: 0vw;
             margin-bottom: 0;
             color: $white;
+            font-size: 4vw;
         }
         &__p {
             grid-area: 6 / 1 / 7 / 7;
@@ -138,6 +169,7 @@ body {
             padding: 4vw 2vw 5vw 2vw;
             margin-top: -5vw;
             @include purple-darken;
+            font-size: 4vw;
         }
     }
 }

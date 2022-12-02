@@ -5,10 +5,34 @@ body {
   height: 100vh;
 }
 
+.header {
+  color: #F8ECD1;
+  margin-left: 5vw;
+  margin-top: -5vw;
+}
+.header__h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 10vw;
+  text-shadow: 1vw 1vw 1vw #85586F;
+}
+.header__img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  box-shadow: 7px 10px 10px #85586F;
+  border-radius: 50%;
+}
+.header__slogan {
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  font-size: 5vw;
+}
+
 .main {
   margin-left: -2vw;
   margin-right: -2vw;
   font-family: "Dosis", sans-serif;
+  font-weight: 200;
 }
 .main__divlol--bg {
   background: url(images/Lol-wallpaper.jpeg);
@@ -75,7 +99,7 @@ body {
   box-shadow: 7px 10px 10px #85586F;
 }
 .main__divAll__card {
-  height: 70vh;
+  height: 80vh;
   border-radius: 10vw;
   background-color: rgba(248, 236, 209, 0.7);
   padding-left: 5vw;
@@ -93,6 +117,7 @@ body {
   margin-left: 3vw;
   color: #482f3c;
   font-family: "Permanent Marker", cursive;
+  font-size: 5vw;
 }
 .main__divAll__h4__date {
   grid-area: 2/6/3/7;
@@ -102,19 +127,22 @@ body {
   margin-top: -4vw;
   margin-bottom: 10vw;
   padding: 2vw;
+  font-size: 4vw;
 }
 .main__divAll__h4__dev {
-  grid-area: 2/3/3/5;
+  grid-area: 2/3/3/6;
   margin-left: 3vw;
   margin-top: 0;
   margin-bottom: 0vw;
   color: #482f3c;
+  font-size: 3vw;
 }
 .main__divAll__h4__publi {
-  grid-area: 3/3/4/5;
+  grid-area: 3/3/4/6;
   margin-left: 3vw;
-  margin-top: -6vw;
+  margin-top: -10vw;
   color: #482f3c;
+  font-size: 3vw;
 }
 .main__divAll__span {
   grid-area: 4/1/5/7;
@@ -122,8 +150,10 @@ body {
   background-color: #AC7D88;
   border-radius: 5vw 5vw 0vw 0vw;
   padding: 4vw 2vw 5vw 2vw;
+  margin-top: 0vw;
   margin-bottom: 0;
   color: #F8ECD1;
+  font-size: 4vw;
 }
 .main__divAll__p {
   grid-area: 6/1/7/7;
@@ -133,4 +163,5 @@ body {
   padding: 4vw 2vw 5vw 2vw;
   margin-top: -5vw;
   color: #482f3c;
+  font-size: 4vw;
 }/*# sourceMappingURL=style.css.map */
