@@ -90,13 +90,30 @@ body {
   grid-template-rows: 1fr repeat(2, 0.5fr) 1fr 0.5fr repeat(3, 1fr) repeat(3, 0.5fr) 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  height: 100vh;
+  height: 120vh;
 }
 .main__divAll__img {
   grid-area: 2/3/5/4;
   position: relative;
   z-index: 1;
   box-shadow: 7px 10px 10px #85586F;
+  width: auto;
+  height: 22vh;
+}
+.main__divAll__button {
+  grid-area: 10/5/12/7;
+  position: relative;
+  background-color: #85586F;
+  font-family: "Permanent Marker", cursive;
+  color: #F8ECD1;
+  font-size: 3vw;
+  border-radius: 5vw;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2vw solid #DEB6AB;
+  box-shadow: 2vw 2vw 5vw #AC7D88;
 }
 .main__divAll__card {
   height: 80vh;
@@ -114,7 +131,7 @@ body {
 }
 .main__divAll__h3 {
   grid-area: 1/3/2/7;
-  margin-left: 3vw;
+  margin-left: 5vw;
   color: #482f3c;
   font-family: "Permanent Marker", cursive;
   font-size: 5vw;
@@ -131,7 +148,7 @@ body {
 }
 .main__divAll__h4__dev {
   grid-area: 2/3/3/6;
-  margin-left: 3vw;
+  margin-left: 5vw;
   margin-top: 0;
   margin-bottom: 0vw;
   color: #482f3c;
@@ -139,8 +156,8 @@ body {
 }
 .main__divAll__h4__publi {
   grid-area: 3/3/4/6;
-  margin-left: 3vw;
-  margin-top: -10vw;
+  margin-left: 5vw;
+  margin-top: -7vw;
   color: #482f3c;
   font-size: 3vw;
 }
@@ -161,7 +178,7 @@ body {
   background-color: #AC7D88;
   border-radius: 0vw 0vw 5vw 5vw;
   padding: 4vw 2vw 5vw 2vw;
-  margin-top: -5vw;
+  margin-top: -10vw;
   color: #482f3c;
   font-size: 4vw;
 }/*# sourceMappingURL=style.css.map */

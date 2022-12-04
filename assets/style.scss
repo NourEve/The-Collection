@@ -97,12 +97,29 @@ body {
         grid-template-rows: 1fr repeat(2, 0.5fr) 1fr 0.5fr repeat(3, 1fr) repeat(3, 0.5fr) 1fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
-        height: 100vh;
+        height: 120vh;
         &__img {
             grid-area: 2 / 3 / 5 / 4;
             position: relative;
             z-index: 1;
             box-shadow: 7px 10px 10px $purple;
+            width: auto;
+            height: 22vh;
+        }
+        &__button {
+            grid-area: 10 / 5 / 12 / 7;
+            position: relative;
+            background-color: $purple;
+            font-family: 'Permanent Marker', cursive;
+            color: $white;
+            font-size: 3vw;
+            border-radius: 5vw;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2vw solid $beige;
+            box-shadow: 2vw 2vw 5vw $rose;
         }
         &__card {
             height: 80vh;
@@ -120,7 +137,7 @@ body {
         }
         &__h3 {
             grid-area: 1 / 3 / 2 / 7;
-            margin-left: 3vw;
+            margin-left: 5vw;
             @include purple-darken;
             font-family: 'Permanent Marker', cursive;
             font-size: 5vw;
@@ -137,7 +154,7 @@ body {
         }
         &__h4__dev {
             grid-area: 2 / 3 / 3 / 6;
-            margin-left: 3vw;
+            margin-left: 5vw;
             margin-top: 0;
             margin-bottom: 0vw;
             @include purple-darken;
@@ -145,8 +162,8 @@ body {
         }
         &__h4__publi {
             grid-area: 3 / 3 / 4 / 6;
-            margin-left: 3vw;
-            margin-top: -10vw;
+            margin-left: 5vw;
+            margin-top: -7vw;
             @include purple-darken;
             font-size: 3vw;
         }
@@ -167,7 +184,7 @@ body {
             background-color: $rose;
             border-radius: 0vw 0vw 5vw 5vw;
             padding: 4vw 2vw 5vw 2vw;
-            margin-top: -5vw;
+            margin-top: -10vw;
             @include purple-darken;
             font-size: 4vw;
         }

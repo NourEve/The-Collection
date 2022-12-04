@@ -6,6 +6,7 @@ const gameLol = {
     publisher : "",
     genres : "Genres : online battle arena, multiplayer, action-RPG",
     presentation : "League of Legends is a team-based strategy game in which two teams of five champions compete to destroy the opposing base. Choose from more than 140 champions, go into battle, eliminate your opponents with skill and shoot down enemy turrets to achieve victory.",
+    lien : "https://play.euw.leagueoflegends.com/fr_FR",
 };
 const gameSubnautica = {
     name : "Subnautica",
@@ -14,6 +15,7 @@ const gameSubnautica = {
     publisher : "",
     genres : "Genres : adventure, independent, survival",
     presentation : " Descend into the depths of an alien underwater world full of wonders and perils. Design equipment, pilot submarines, terraform a voxel terrain, and adapt to the wilderness to explore the world, all while trying to survive.",
+    lien : "https://store.steampowered.com/app/264710/Subnautica/",
 };
 const gameTotalwar = {
     name : " Total War: WARHAMMER",
@@ -22,6 +24,7 @@ const gameTotalwar = {
     publisher : " SEGA",
     genres : "Genres : real-time strategy, turn-based strategy, wargame",
     presentation : " The cataclysmic conclusion to the Total War: WARHAMMER trilogy has arrived. Join forces and enter the Realm of Chaos, a dimension of mind-bending horror where the fate of the entire world will be decided. Can you triumph over your demons... or command them?",
+    lien : "https://store.steampowered.com/app/1142710/Total_War_WARHAMMER_III/",
 };
 const gameDragonage = {
     name : " Dragon Age™ Inquisition",
@@ -30,6 +33,7 @@ const gameDragonage = {
     publisher : "Electronic Arts",
     genres : "Genres : action, adventure, RPG, strategy",
     presentation : " When the skies are torn apart and chaos ensues, the world needs heroes: you, the inquisitor. Thedas is a land of conflict. Factions clash unceasingly as an unprecedented demonic invasion sweeps through the land. What about you? You and your group of champions are the only ones who can prevent the catastrophe. You must take the lead... or fail.",
+    lien : "https://store.steampowered.com/app/1222690/Dragon_Age_Inquisition/",
 };
 const gameThewitcher = {
     name : "The Witcher® 3: Wild Hunt",
@@ -38,6 +42,7 @@ const gameThewitcher = {
     publisher : "",
     genres : "Genres : action-RPG",
     presentation : "In The Witcher, you play as Geralt de Riv, a professional monster hunter tasked with finding the child of prophecy in a vast open world filled with trading cities, pirate islands, dangerous mountain passes, and forgotten caves to explore.",
+    lien : "https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/",
 };
 const gameGenshin = {
     name : "Genshin Impact",
@@ -46,6 +51,7 @@ const gameGenshin = {
     publisher : "",
     genres : "Genres : action-RPG",
     presentation : "In a fantasy world called Teyvat, a sister and brother find themselves separated by an unknown goddess. Begin your adventure as a Traveler or Traveleress whose origin is unknown, discovering the history of this new world. During the course of the adventure, you will have the opportunity to control several characters, each with a unique personality and different elemental abilities.",
+    lien : "https://genshin.hoyoverse.com/pc-launcher/?utm_source=EU_google_EUT2_search_20220719&mhy_trace_channel=ga_channel&new=1&gclid=CjwKCAiAp7GcBhA0EiwA9U0mtshm8ZBaZkbZBShtI9F2W-d_tLbhiKCAyW6Z6jamioEtE3_WgGRm4xoCzy8QAvD_BwE#/GI008",
 };
 const gameSkyrim = {
     name : "The Elder Scrolls V",
@@ -54,6 +60,7 @@ const gameSkyrim = {
     publisher : "",
     genres : "Genres : action-RPG",
     presentation : "Winner of over 200 Game of the Year awards! Skyrim Special Edition breathes new life into this epic adventure with great detail. The Special Edition includes the popular game and additional content, with remastered graphics and effects, volumetric god rays, dynamic depth of field, reflections and more.",
+    lien: "https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/",
 };
 const gameAgeof = {
     name : "Age of Empires II",
@@ -62,6 +69,7 @@ const gameAgeof = {
     publisher : "Xbox Game Studios",
     genres : "Genres : strategy",
     presentation : "Age of Empires II: Definitive Edition celebrates the 20th anniversary of one of the world's most popular strategy game franchises. Experience the original campaigns and most popular expansions like never before, and enjoy an enhanced experience with over 200 hours of gameplay and 1,000 years of human history.",
+    lien : "https://store.steampowered.com/app/813780/Age_of_Empires_II_Definitive_Edition/",
 };
 const gameThesims = {
     name : "The Sims 4",
@@ -70,6 +78,7 @@ const gameThesims = {
     publisher : "Electronic Arts",
     genres : "Genres : life simulation",
     presentation : "Unleash your imagination and create a unique Sims world that's uniquely yours. Choose how your Sims look, act, and feel, then decide how they'll live their lives. Design and build incredible homes for each family, then decorate them with your favorite furniture and objects.  Immerse yourself in this extraordinary game where the possibilities are endless.",
+    lien : "https://store.steampowered.com/app/1222670/The_Sims_4/",
 };
 const gameAssassin = {
     name : "Assassin's Creed Valhalla",
@@ -78,6 +87,7 @@ const gameAssassin = {
     publisher : "",
     genres : "Genres : action-adventure, RPG",
     presentation : "Play as Eivor, a legendary Viking on a quest for glory. Lead epic attacks against Saxon troops and fortresses. Wield two formidable weapons simultaneously and experience the visceral Viking style of combat. Shape the progression of your character and your colony with every choice you make. Explore an open world set in the Dark Ages, from the shores of Norway to the kingdoms of England.",
+    lien: "https://store.steampowered.com/app/2208920/Assassins_Creed_Valhalla/",
 };
 
 
@@ -93,17 +103,24 @@ function addElement (balise, content, Newclass){
     return newElem;
 }
 //function creating div
-function addDiv (classDiv1, classImg, n, attributImg, newObject){
+function addDiv (classDiv1, n, attributImg, newObject, newUrl){
     newDiv1 = addElement('div', "", classDiv1);
     tagMain.appendChild(newDiv1);
-    newImg = addElement('img', "", classImg);
+    newImg = addElement('img', "", "main__divAll__img");
     newDiv1.appendChild(newImg);
     newImg.src = tImages[n];
     newImg.setAttribute("alt", attributImg);
     newDiv2 = addElement('div', "", "main__divAll__card");
     newDiv1.appendChild(newDiv2);
     addObject (newObject, newDiv2);
+    newButton = addElement('a', "Téléchargez ici !", "main__divAll__button");
+    newButton.setAttribute("href", newUrl);
+    newButton.setAttribute("target", "_blank");
+    newDiv1.appendChild(newButton);
 }
+//function creating button
+
+
 //function creating card
 function addObject (myObject, allDiv){
     let F1PropertyValue = myObject[Object.keys(myObject)[0]]; 
@@ -129,6 +146,7 @@ function addObject (myObject, allDiv){
     let F6PropertyValue = myObject[Object.keys(myObject)[5]]; 
     let presentation = addElement ("p", F6PropertyValue, "main__divAll__p");
     allDiv.appendChild(presentation);
+
 }
 
 //Creation of the header, the main and the footer
@@ -155,32 +173,32 @@ tagHeader.appendChild(sloganHeader);
 
 //Creation of main : one 'div' for each game
 //Creation of divLOL
-addDiv ("main__divlol--bg", "main__divAll__img", 1, "Logo-League of Legends", gameLol);
+addDiv ("main__divlol--bg", 1, "Logo-League of Legends", gameLol, "https://play.euw.leagueoflegends.com/fr_FR");
 document.querySelector(".main__divlol--bg").classList.add("main__divAll");
 //Creation of divSubnautica
-addDiv ("main__divSubnautica--bg", "main__divAll__img", 2, "Picture of Subnautica", gameSubnautica);
+addDiv ("main__divSubnautica--bg", 2, "Picture of Subnautica", gameSubnautica, "https://store.steampowered.com/app/264710/Subnautica/");
 document.querySelector(".main__divSubnautica--bg").classList.add("main__divAll");
 //Creation of divTotalWar
-addDiv ("main__divTotalWar--bg", "main__divAll__img", 3, "Logo of TotalWar", gameTotalwar);
+addDiv ("main__divTotalWar--bg", 3, "Logo of TotalWar", gameTotalwar, "https://store.steampowered.com/app/1142710/Total_War_WARHAMMER_III/");
 document.querySelector(".main__divTotalWar--bg").classList.add("main__divAll");
 //Creation of divDragonAge
-addDiv ("main__divDragonAge--bg", "main__divAll__img", 4, "Logo of Dragon Age", gameDragonage);
+addDiv ("main__divDragonAge--bg", 4, "Logo of Dragon Age", gameDragonage, "https://store.steampowered.com/app/1222690/Dragon_Age_Inquisition/");
 document.querySelector(".main__divDragonAge--bg").classList.add("main__divAll");
 //Creation of divTheWitcher
-addDiv ("main__divTheWitcher--bg", "main__divAll__img", 5, "Logo of The Witcher 3", gameThewitcher);
+addDiv ("main__divTheWitcher--bg", 5, "Logo of The Witcher 3", gameThewitcher, "https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/");
 document.querySelector(".main__divTheWitcher--bg").classList.add("main__divAll");
 //Creation of divGenshin
-addDiv ("main__divGenshin--bg", "main__divAll__img", 6, "Logo of Genshin Impact", gameGenshin);
+addDiv ("main__divGenshin--bg", 6, "Logo of Genshin Impact", gameGenshin, "https://genshin.hoyoverse.com/pc-launcher/?utm_source=EU_google_EUT2_search_20220719&mhy_trace_channel=ga_channel&new=1&gclid=CjwKCAiAp7GcBhA0EiwA9U0mtshm8ZBaZkbZBShtI9F2W-d_tLbhiKCAyW6Z6jamioEtE3_WgGRm4xoCzy8QAvD_BwE#/GI008");
 document.querySelector(".main__divGenshin--bg").classList.add("main__divAll");
 //Creation of divSkyrim
-addDiv ("main__divSkyrim--bg", "main__divAll__img", 7, "Logo of Skyrim", gameSkyrim);
+addDiv ("main__divSkyrim--bg", 7, "Logo of Skyrim", gameSkyrim, "https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/");
 document.querySelector(".main__divSkyrim--bg").classList.add("main__divAll");
 //Creation of divAgeOf
-addDiv ("main__divAgeOf--bg", "main__divAll__img", 8, "Logo of Age of empires", gameAgeof);
+addDiv ("main__divAgeOf--bg", 8, "Logo of Age of empires", gameAgeof, "https://store.steampowered.com/app/813780/Age_of_Empires_II_Definitive_Edition/");
 document.querySelector(".main__divAgeOf--bg").classList.add("main__divAll");
 //Creation of divTheSims
-addDiv ("main__divTheSims--bg", "main__divAll__img", 9, "Logo of The Sims", gameThesims);
+addDiv ("main__divTheSims--bg", 9, "Logo of The Sims", gameThesims, "https://store.steampowered.com/app/1222670/The_Sims_4/");
 document.querySelector(".main__divTheSims--bg").classList.add("main__divAll");
 //Creation of divAssassin
-addDiv ("main__divAssassin--bg", "main__divAll__img", 10, "Logo of Assassin's Creed Valhalla", gameAssassin);
+addDiv ("main__divAssassin--bg", 10, "Logo of Assassin's Creed Valhalla", gameAssassin, "https://store.steampowered.com/app/2208920/Assassins_Creed_Valhalla/");
 document.querySelector(".main__divAssassin--bg").classList.add("main__divAll");
