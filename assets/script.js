@@ -113,7 +113,7 @@ function addDiv (classDiv1, n, attributImg, newObject, newUrl){
     newDiv2 = addElement('div', "", "main__divAll__card");
     newDiv1.appendChild(newDiv2);
     addObject (newObject, newDiv2);
-    newButton = addElement('a', "Téléchargez ici !", "main__divAll__button");
+    newButton = addElement('a', "Download", "main__divAll__button");
     newButton.setAttribute("href", newUrl);
     newButton.setAttribute("target", "_blank");
     newDiv1.appendChild(newButton);
